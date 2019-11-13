@@ -32,7 +32,7 @@ var score = 0;
 var i = 0;
 var secondsLeft = 60;
 
-function setTime() {
+/*function setTime() {
   var timerInterval = setInterval(function() {
     secondsLeft--;
     $("#timer").text(secondsLeft);
@@ -42,7 +42,7 @@ function setTime() {
       $("#question").text("Too Slow Press Start to Play Again");  
       }
   }, 1000);
-}
+}*/
 
 function hideQues(){
 $("#high-score").show();
@@ -68,14 +68,11 @@ $("#start").on("click", function () {
   $("#B").text(questions[0].choices[1]);
   $("#C").text(questions[0].choices[2]);
   $("#D").text(questions[0].choices[3]); 
-  $("#start").hide(); 
+  $("#start, #high-score").hide(); 
   $("#high-score").hide();
-  $("#A").show();
-  $("#B").show();
-  $("#C").show();
-  $("#D").show();
-  $("#next").show();
+  $("#A, #B, #C, #D, #next").show();  
   setTime();
+  $("#scoreList").attr("<li>");
 });
 
 $("#next").on("click", function () {
@@ -92,9 +89,9 @@ $("#next").on("click", function () {
   };
   }else {        
     var initials = input.value;    
-    localStorage.setItem(initials, score)       
+    highScores.push(initials + " : " + score )       
     alert("Score: " + score);
-    console.log(input.value);
+    console.log(highScores);
     hideQues();
   }
 });
@@ -129,7 +126,9 @@ $("#high-score").click(function() {
   });
 
 $("#save").click(function() {
-    $("#scoreList").text( localStorage.key( i ) + ": " + localStorage.getItem( i ) );
+    
+    $("#scoreList").text(highScores);
+   
    
 });
 });

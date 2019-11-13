@@ -14,6 +14,7 @@ header {
     text-align: center;
 }
 #next, #start {
+    width: 200px;
     margin-bottom: 20px;
 }
 
