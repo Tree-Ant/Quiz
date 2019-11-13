@@ -7,6 +7,9 @@ header {
     margin-bottom: 20px;
     border-bottom: grey solid 5px;
 }
+body {
+    font-size: 24px;
+}
 #input {
     text-align: center;
 }
@@ -16,6 +19,17 @@ header {
 #next, #start {
     width: 200px;
     margin-bottom: 20px;
+}
+button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
 }
 
 h2 {
@@ -36,8 +50,19 @@ h2 {
 
 #A, #B, #C, #D , #next, #start {
     width: 100%;
+    
+}
+.container {
+    margin-top: 20px;
 }
 
+#start {
+    background: green;
+}
+
+#A, #B, #C, #D {
+    background: green;
+}
 .modal {
     display: block;  
   }
@@ -59,4 +84,26 @@ h2 {
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   }
+
+  @media only screen and (max-width: 600px) {
+    #next {
+        margin-top: 10px;
+    } 
+    #input {
+        width: 200px;
+    }
+    .col {
+        padding: 5px;
+    }
+    #next {
+        background: rgb(29, 29, 87);
+    }
+    #high-score{
+        background: red;
+    }
+
+    #next {
+        
+    }
+    
   
