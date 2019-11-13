@@ -7,19 +7,25 @@ header {
     margin-bottom: 20px;
     border-bottom: grey solid 5px;
 }
+
 body {
     font-size: 24px;
 }
+
 #input {
     text-align: center;
+    background: whitesmoke;
 }
+
 #questioins{
     text-align: center;
 }
+
 #next, #start {
     width: 200px;
     margin-bottom: 20px;
 }
+
 button {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -53,7 +59,6 @@ h2 {
     
 }
 
-
 #start {
     background: green;
 }
@@ -61,19 +66,21 @@ h2 {
 #A, #B, #C, #D {
     background: green;
 }
+
 .modal {
     display: block;  
-  }
-  
-  .modal-header {
+}  
+
+.modal-header {
     padding: 2px 16px;
     background-color: #586994;
     color: white;
-  }
+}
   
-  .modal-body {padding: 2px 16px;}
+.modal-body {padding: 2px 16px;
+}
   
-  .modal-content {
+.modal-content {
     position: relative;
     background-color: #fefefe;
     margin: auto;
@@ -81,7 +88,7 @@ h2 {
     border: 1px solid #888;
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  }
+}
 
   @media only screen and (max-width: 600px) {
     #next {
@@ -91,22 +98,20 @@ h2 {
     .col {
         padding: 5px;
     }
+
     #next {
         background: rgb(29, 29, 87);
     }
+
     #high-score{
         background: red;
-    }
-
-    #next {
-        
     }
     
     #input{
         width: 100%;
-    }
-   
+    }   
     
     .button-grid {
         margin-top: 20px;
     }
+}
