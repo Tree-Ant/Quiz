@@ -6,12 +6,12 @@ $(document).ready(function () {
           answer: "9"
       },
       {
-          title: "How many licks does it take to get to the center of a Tootsie Pop",
+          title: "How many licks does it take to get to the center of a Tootsie Pop?",
           choices: ["207", "458", "92", "a three"],
           answer: "a three"
       },
       {
-          title: "Who likes orange soda",
+          title: "Who likes orange soda?",
           choices: ["Kennan", "Kel", "Arnold", "Doug"],
           answer: "Kel"
       },
@@ -66,6 +66,7 @@ $(document).ready(function () {
   hideQues();
 
   $("#start").on("click", function () {
+    reset();
     setTime();
     $("#timer").show();
   });
@@ -173,7 +174,7 @@ $(document).ready(function () {
 
       }
       $(".modal").hide();
-      reset();
+      
       empty();
       $("#save").hide();
 

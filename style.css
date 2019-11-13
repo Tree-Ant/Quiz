@@ -52,9 +52,7 @@ h2 {
     width: 100%;
     
 }
-.container {
-    margin-top: 20px;
-}
+
 
 #start {
     background: green;
@@ -89,9 +87,7 @@ h2 {
     #next {
         margin-top: 10px;
     } 
-    #input {
-        width: 200px;
-    }
+    
     .col {
         padding: 5px;
     }
@@ -106,4 +102,11 @@ h2 {
         
     }
     
-  
+    #input{
+        width: 100%;
+    }
+   
+    
+    .button-grid {
+        margin-top: 20px;
+    }
