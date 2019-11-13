@@ -1,0 +1,61 @@
+header {
+    background: rgb(29, 29, 87);
+    width: 100%;
+    color: whitesmoke;
+    height: fit-content;
+    font-size: 48px;
+    margin-bottom: 20px;
+    border-bottom: grey solid 5px;
+}
+#input {
+    text-align: center;
+}
+#questioins{
+    text-align: center;
+}
+#next, #start {
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#score {
+    text-align: right;
+}
+
+.button-grid {
+    margin-top: 100px;
+}
+
+.button-grid2 {
+    margin-top: 20px;
+}
+
+#A, #B, #C, #D , #next, #start {
+    width: 100%;
+}
+
+.modal {
+    display: block;  
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #586994;
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  

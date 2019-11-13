@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Questions</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        Quiz Time
+    </header>
+<!--Modal \/ -->
+    <div id="modal-container" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <span class="close">&times;</span>
+                  <h2 id="modal-name">
+                  </h2>
+                </div>
+                <div class="modal-body">
+                  <h3>
+                    Description:
+                  </h3>
+                  <ul id="scoreList"></ul>
+                  <div>
+                    <button id="save">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+<!--Modal /\ -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="jumbotron">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <p id="timer">Time Left:</p>
+                            </div>
+                            <div class="col">
+                                <p id="score">Score: 0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div>
+                                    <input type="text" id="input"></input>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div>
+                                    <button id="start">START</button>
+                                </div>
+                            </div>
+                            <div class="col">
+                                    <div>
+                                        <button id="high-score">Scores</button>
+                                    </div>
+                                </div>
+                            <div class="col">
+                                <div>
+                                    <button id="next">SUBMIT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h2 id="question">This is a quiz, its a big ole quiz, its the biggest quiz in the whole
+                                    wide world</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-grid">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="start-button">
+                                        <button id="A">A</button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="high-button">
+                                        <button id="B">B</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-grid2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="start-button">
+                                        <button id="C">C</button>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="high-button">
+                                        <button id="D">D</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="questions.js"></script>
+</body>
+
+</html>
