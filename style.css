@@ -1,15 +1,15 @@
 header {
-    background: rgb(29, 29, 87);
+    background: RGB(35, 43, 69);
     width: 100%;
     color: whitesmoke;
     height: fit-content;
     font-size: 48px;
     margin-bottom: 20px;
-    border-bottom: grey solid 5px;
+    border-bottom: rgb(132, 138, 170) solid 5px;
 }
 
 body {
-    font-size: 24px;
+    border: rgb(132, 138, 170);
 }
 
 #input {
@@ -17,7 +17,7 @@ body {
     background: whitesmoke;
 }
 
-#questioins{
+#question{
     text-align: center;
 }
 
@@ -91,8 +91,11 @@ h2 {
 }
 
   @media only screen and (max-width: 600px) {
-    #next {
-        margin-top: 10px;
+    body {
+        background: rgb(35, 43, 43);
+    }
+    #start {
+        background: rgb(35,69,61);
     } 
     
     .col {
@@ -100,18 +103,98 @@ h2 {
     }
 
     #next {
-        background: rgb(29, 29, 87);
+        background: RGB(35, 43, 69);
+        margin-top: 10px;
+        margin-bottom: 50px;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        
     }
 
     #high-score{
-        background: red;
+        background: rgb(69,34,38);
     }
     
     #input{
-        width: 100%;
-    }   
+        width: 328px;
+        background: rgb(35, 43, 43);
+        color: whitesmoke;
+        border-radius: 15px;
+    }
+       
     
     .button-grid {
         margin-top: 20px;
+    }
+
+    .jumbotron{
+        padding-top: 0;
+        color: whitesmoke;
+        height: 600px;
+        background: rgb(35, 43, 43);
+    }
+
+    .modal-content {
+        background: rgb(35, 43, 43);
+    }
+
+    #A, #B, #C, #D {
+        background: rgb(35,69,61);
+        height: 75px;
+    }
+
+    #timer {
+        border: solid 1px;
+        text-align: center;
+        border-radius: 15px;
+        background: rgb(132, 138, 170);
+    }
+    #score {
+        border: solid 1px;
+        text-align: center;
+        border-radius: 15px;
+    }
+    #question{
+        
+    }
+    .modal {
+        display: block;  
+    }  
+    
+    .modal-header {
+        padding: 2px 16px;
+        background-color:rgb(69,34,38);
+        color: whitesmoke;
+    }
+      
+    .modal-body {
+        padding: 2px 16px;
+    }
+      
+    .modal-content {
+        position: relative;       
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 80%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    #save{
+       background: rgb(35, 43, 69);
+       color: whitesmoke;
+    }
+    #user{
+        width: 264px;
+        font-size: 24px;
+        text-align: center;
+        border-radius: 15px;
+    }
+    #scoreList {
+        color: whitesmoke;
+    }
+    h3 {
+        color: whitesmoke;
+        border-bottom: 5px solid whitesmoke;
     }
 }

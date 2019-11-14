@@ -2,8 +2,8 @@ $(document).ready(function () {
     var questions = [
         {
             title: "What number am I thinking of?",
-            choices: ["1", "4", "9", "3"],
-            answer: "9"
+            choices: ["one", "four", "nine", "three"],
+            answer: "nine"
         },
         {
             title: "How many licks does it take to get to the center of a Tootsie Pop?",
@@ -22,7 +22,7 @@ $(document).ready(function () {
         },
         {
             title: "Congratulations!! Enter your Initals above to save High Scores!!",
-            choices: [],
+            choices: ["", "","",""],
             answer: "----"
         },
     ];
@@ -37,7 +37,7 @@ $(document).ready(function () {
 
     function setTime() {
         clearInterval(timerInterval);
-        secondsLeft = 10;
+        secondsLeft = 60;
         var timerInterval = setInterval(function () {
             secondsLeft--;
             $("#timer").text(secondsLeft + " secs");
@@ -81,8 +81,7 @@ $(document).ready(function () {
         console.log(highScores);
     });
 
-    $("#next").on("click", function () {
-        setTime();
+    $("#next").on("click", function () {       
         var inputEl = document.querySelector("#input");
         if (i < questions.length - 1) {
             questions[i++];
@@ -102,6 +101,7 @@ $(document).ready(function () {
                 $("#score").text("Base Score: " + score);
             };
             } else {
+                
                 scoreCalc();
             }
         });
